@@ -218,9 +218,10 @@
   <script>
     /* ================= TERMINAL INTRO ================= */
     const lines = [
-      '> booting portfolio...',
+      '> booting website...',
       '> loading modules...',
-      '> connecting to github.com/TommyCocchi',
+      '> connecting to github',
+      '> feeding llamas',
       '> done.',
       '',
       'welcome.'
@@ -266,7 +267,7 @@
             card.className = 'card reveal';
             card.innerHTML = `
               <h3>${repo.name}</h3>
-              <p>${repo.description || 'no description, just vibes.'}</p>
+              <p>${repo.description || 'no description'}</p>
             `;
             grid.appendChild(card);
           });
