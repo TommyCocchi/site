@@ -256,7 +256,7 @@
       .then(repos => {
         const grid = document.getElementById('repo-grid');
         repos
-          .filter(r => !r.fork)
+          .filter(r => !r.fork && r.name.toLowerCase() !== "site")
           .slice(0, 6)
           .forEach(repo => {
             const card = document.createElement('a');
